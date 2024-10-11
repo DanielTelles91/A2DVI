@@ -15,43 +15,18 @@ For the VGA output to be active, the [VGA firmware](https://github.com/markadev/
 The card can produce either an analog VGA or a digital HDMI signal, but not both simultaneously.
 To switch between modes, a firmware update is required and opening/closing connections.
 
-## Procedure to activate DVI mode
-* v1.2:
-  program [A2DVI-Firmware](https://github.com/ThorstenBr/A2DVI-Firmware) to RPI Pico;
-  remove U6 and disconnect pins 11, 12 and 13 of U5.
-* v1.5:
-  program [A2DVI-Firmware](https://github.com/ThorstenBr/A2DVI-Firmware) to RPI Pico;
-  open all 9 DIP switches.
-* v1.6:
-  program [A2DVI-Firmware](https://github.com/ThorstenBr/A2DVI-Firmware) to RPI Pico;
-  desloder the 8 soldering pads at GPIOs 14-21.
-* v1.7:
-  program [A2DVI-Firmware](https://github.com/ThorstenBr/A2DVI-Firmware) to RPI Pico;
-  desloder the 8 soldering pads at GPIOs 14-21; remove VGA sub-board and ribbon cable.
-* v2.0:
-  program [A2DVI-Firmware](https://github.com/ThorstenBr/A2DVI-Firmware) to RPI Pico.
-  
-## Procedure to activate VGA mode
-* v1.2:
-  program [VGA firmware](https://github.com/markadev/AppleII-VGA) to RPI Pico;
-  replace U5 and U6.
-* v1.5:
-  program [VGA firmware](https://github.com/markadev/AppleII-VGA) to RPI Pico;
-  close all 9 DIP switches.
-* v1.6:
-  program [VGA firmware](https://github.com/markadev/AppleII-VGA) to RPI Pico;
-  sloder the 8 soldering pads at GPIOs 14-21.
-* v1.7:
-  program [VGA firmware](https://github.com/markadev/AppleII-VGA) to RPI Pico;
-  sloder the 8 soldering pads at GPIOs 14-21; connect VGA sub-board to main board by the ribbon cable.
-* v2.0:
-  N.A. - v2.0 is HDMI only.
+
+![Captura de tela 2024-10-10 230457](https://github.com/user-attachments/assets/a54eeb28-824a-4d6d-ac8d-f013b28bb772)
+![Captura de tela 2024-10-10 230504](https://github.com/user-attachments/assets/77b93df3-cf70-4fb8-b49c-9a99998398f9)
+![Captura de tela 2024-10-10 230522](https://github.com/user-attachments/assets/5457b145-a199-492c-894b-bebeb66caf3d)
+![Captura de tela 2024-10-10 230530](https://github.com/user-attachments/assets/09620d8a-bc85-41d5-b054-c491fe9b5da9)
+
+
+
+
 ## Dual-Language Support
 The pin on the v1.5 and later boards is for AltChr connection, supported by A2DVI firmware for switching between alternative character sets on non-US versions of Apple II ("Euro-machines").
 
-![A2DVI PCB](v1.6/A2DVI.v1.6.jpg)
-![A2DVI PCB](v1.7/A2DVI.v1.7.jpg)
-![A2DVI PCB](v2.0/A2DVI.v2.0.jpg)
 
 # Hardware
 * Based on the PICO controller board.
